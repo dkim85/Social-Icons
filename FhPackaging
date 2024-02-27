@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
+        html, body {
+            margin: 0;
+            height: 100%;
+            font-family: 'Montserrat', sans-serif;
+        }
+        .container {
+            padding-top: 1px;
+            min-height: 50%;
+            margin-right: 5px;
+        }
+        .headline {
+            text-align: right;
+            margin-right: 10px;
+            color: #ffffff; /* Set headline text color to white */
+            animation: fadeInLeft 1s ease-out; /* Apply fade-in animation */
+        }
+        .headline h1 {
+            font-size: 15px;
+            font-family: 'Montserrat', sans-serif;
+            color: #ffffff; /* Set headline text color to white */
+        }
+        .social-buttons {
+            display: flex;
+            justify-content: flex-end;
+            padding: 1px;
+            padding-bottom: 15px;
+            border-radius: 10px;
+            text-align: center;
+        }
+        .social-margin {
+            margin-right: 5px;
+        }
+        a, a:hover, a:focus, a:active {
+            text-decoration: none;
+        }
+        .social-icon {
+            margin-bottom: 1px;
+            box-sizing: border-box;
+            border-radius: 50%;
+            border: 5px solid transparent;
+            text-align: center;
+            width: 50px;
+            height: 50px;
+            display: inline-block;
+            line-height: 40px;
+            transition: all 0.5s;
+        }
+        .social-icon:hover {
+            transform: rotate(360deg) scale(1.3);
+        }
+        .facebook {
+            font-size: 22px;
+            border-color: #3b5998;
+            background-color: #3b5998;
+            color: #ffffff;
+        }
+        .facebook:hover {
+            background-color: #ffffff;
+            color: #3b5998;
+        }
+        .twitter {
+            font-size: 22px;
+            border-color: #55acee;
+            background-color: #55acee;
+            color: #ffffff;
+        }
+        .twitter:hover {
+            background-color: #ffffff;
+            color: #55acee;
+        }
+        .google-plus {
+            font-size: 22px;
+            background-color: #dd4b39;
+            color: #ffffff;
+            border-color: #dd4b39;
+        }
+        .google-plus:hover {
+            background-color: #ffffff;
+            color: #dd4b39;
+        }
+        .linkedin {
+            font-size: 24px;
+            background-color: #0976b4;
+            color: #ffffff;
+            border-color: #0976b4;
+        }
+        .linkedin:hover {
+            background-color: #ffffff;
+            color: #0976b4;
+        }
+        .pinterest {
+            font-size: 22px;
+            background-color: #cb2027;
+            color: #ffffff;
+            border-color: #cb2027;
+        }
+        .pinterest:hover {
+            background-color: #ffffff;
+            color: #cb2027;
+        }
+        .instagram {
+            font-size: 22px;
+            background: radial-gradient(circle at 30% 107%, #fdf497 0%, #fdf497 5%, #fd5949 45%, #d6249f 60%, #285AEB 90%);
+            color: #ffffff;
+            border-color: #fd5949;
+        }
+        .instagram:hover {
+            color: #ffffff;
+        }
+        .youtube {
+            font-size: 22px;
+            background-color: #bb0000;
+            color: #ffffff;
+            border-color: #bb0000;
+        }
+        .youtube:hover {
+            background-color: #ffffff;
+            color: #bb0000;
+        }
+        
+        /* Keyframes for fade-in animation */
+        @keyframes fadeInLeft {
+            from {
+                opacity: 0;
+                transform: translateX(-20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="headline">
+            <h1>Follow Us</h1> <!-- Changed headline text to "Follow Us" -->
+        </div>
+        <div class="social-buttons">        
+            <!-- facebook Button -->
+            <a href="https://www.facebook.com/fhpkgusa/" target="_blank" class="social-margin" rel="noopener"> 
+                <div class="social-icon facebook">
+                    <i class="fa fa-facebook" aria-hidden="true"></i> 
+                </div>
+            </a>
+            <!-- pinterest Button -->
+            <a href="https://www.pinterest.com/FHPKGUSA/" target="_blank" class="social-margin" rel="noopener">
+                <div class="social-icon pinterest">
+                    <i class="fa fa-pinterest-p" aria-hidden="true"></i>
+                </div>
+            </a>
+            <!-- LinkedIn Button -->
+            <a href="https://www.linkedin.com/company/fh-packaging" class="social-margin" target="_blank" rel="noopener">
+                <div class="social-icon linkedin">
+                    <i class="fa fa-linkedin" aria-hidden="true"></i>
+                </div> 
+            </a>
+            <!-- Youtube Button -->
+            <a href="https://www.youtube.com/@fhpackaging" target="_blank" class="social-margin" rel="noopener">
+                <div class="social-icon youtube">
+                    <i class="fa fa-youtube" aria-hidden="true"></i>
+                </div> 
+            </a>
+            <!-- Instagram Button -->
+            <a href="https://www.instagram.com/fhpkg/" target="_blank" class="social-margin" rel="noopener">
+                <div class="social-icon instagram">
+                    <i class="fa fa-instagram" aria-hidden="true"></i>
+                </div> 
+            </a>
+            <!-- TwitterButton -->
+            <a href="https://twitter.com/fhpkg" target="_blank" class="social-margin" rel="noopener">
+                <div class="social-icon twitter">
+                    <i class="fa fa-twitter" aria-hidden="true"></i>
+                </div> 
+            </a>
+        </div>
+    </div>
+</body>
+</html>
